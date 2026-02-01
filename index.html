@@ -15,13 +15,11 @@
             overflow-x: hidden;
         }
 
-        /* Smooth fade animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Floating hearts */
         .heart {
             position: fixed;
             width: 15px;
@@ -50,7 +48,6 @@
             100% { transform: translateY(-10vh) rotate(45deg); opacity: 0; }
         }
 
-        /* Sections */
         .section {
             padding: 80px 25px;
             text-align: center;
@@ -70,7 +67,6 @@
             margin-top: -10px;
         }
 
-        /* Image section */
         .photo-box {
             width: 90%;
             max-width: 400px;
@@ -80,12 +76,8 @@
             box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
-        .photo-box img {
-            width: 100%;
-            display: block;
-        }
+        .photo-box img { width: 100%; display: block; }
 
-        /* Love message boxes */
         .msg {
             background: #ffd0e6;
             padding: 20px;
@@ -98,99 +90,142 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        /* Ending section */
+        /* TIMELINE EVENTS */
+        .events-box {
+            background: #ffd7ec;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 40px 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .event-title {
+            color: #d52e7b;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .event-text {
+            color: #902356;
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            background: #ffe9f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
         .end {
             font-size: 2em;
             color: #c3136b;
             font-weight: 700;
             padding: 50px 20px;
         }
-
-        /* Button */
-        .btn {
-            background: #ff6daa;
-            color: white;
-            padding: 14px 25px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 1.2em;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
     </style>
 </head>
 
 <body>
 
-    <!-- Floating Hearts Generator -->
-    <script>
-        for (let i = 0; i < 25; i++) {
-            let h = document.createElement("div");
-            h.className = "heart";
-            h.style.left = Math.random() * 100 + "vw";
-            h.style.animationDelay = Math.random() * 4 + "s";
-            h.style.transform = "scale(" + (Math.random() * 1.5) + ")";
-            document.body.appendChild(h);
-        }
-    </script>
+<script>
+    for (let i = 0; i < 25; i++) {
+        let h = document.createElement("div");
+        h.className = "heart";
+        h.style.left = Math.random() * 100 + "vw";
+        h.style.animationDelay = Math.random() * 4 + "s";
+        h.style.transform = "scale(" + (Math.random() * 1.5) + ")";
+        document.body.appendChild(h);
+    }
+</script>
 
-    <!-- MAIN TITLE -->
-    <div class="section">
-        <div class="title">For My Sriyuuu 💗</div>
-        <div class="subtitle">A little something I made… just for you.</div>
+<div class="section">
+    <div class="title">For My Sriyuuu 💗</div>
+    <div class="subtitle">A small piece of my heart… made for you.</div>
+</div>
+
+<div class="photo-box">
+    <img src="PHOTO1.jpg">
+</div>
+
+<div class="msg">
+    Every moment with you feels warm, calm and special.
+</div>
+
+<!-- ❤️ EVENTS SECTION -->
+<div class="events-box">
+    <div class="event-title">Our Special Moments 💗</div>
+
+    <div class="event-text">
+        <strong>23 November 2025</strong><br><br>
+        Our first meet was in a family trip while going Ghatagan.  
+        When I saw you, my heart just beat faster — it was love at first sight.  
+        I wanted to talk with you, walk with you… you felt like home.  
+        It never seemed like we were strangers. Our vibes were just awesome.
     </div>
 
-    <!-- HERO PHOTO -->
-    <div class="photo-box">
-        <img src="PHOTO1.jpg" alt="Her Photo">
+    <div class="event-text">
+        <strong>24 November 2025</strong><br><br>
+        I had given you my Instagram ID where I could send you photos —  
+        but deep down it was just a chance to talk with you, to know you better.  
+        My mom had disagreed to give you my number or ID,  
+        but in the end you noted it and texted me…  
+        and I’m so glad you did.  
+        From that moment, you became my only favorite special person.
     </div>
 
-    <!-- STORY CONTENT -->
-    <div class="msg">
-        Every moment with you feels warm, calm, and special in its own way.
+    <div class="event-text">
+        <strong>27 December 2025</strong><br><br>
+        I proposed you… it was a scary moment for me.  
+        I had never proposed anyone in my entire life —  
+        and I am so glad that my first time was with you.  
+        You accepted it, and I knew you needed time.  
+        I understood it, and I’m always standing behind you.  
+        Come to me whenever you want…  
+        I’ll never judge you.  
+        My heart is only for you.  
+        I’m all yours 💗
     </div>
+</div>
 
-    <div class="photo-box">
-        <img src="PHOTO2.jpg" alt="Her Photo">
-    </div>
+<div class="photo-box">
+    <img src="PHOTO2.jpg">
+</div>
 
-    <div class="msg">
-        You are the prettiest part of my day — always.
-    </div>
+<div class="msg">
+    You are the prettiest part of my day.
+</div>
 
-    <div class="photo-box">
-        <img src="PHOTO3.jpg" alt="Her Photo">
-    </div>
+<div class="photo-box">
+    <img src="PHOTO3.jpg">
+</div>
 
-    <div class="msg">
-        Sometimes I think about how lucky I am…  
-        and your name is always the reason.
-    </div>
+<div class="msg">
+    I’m lucky… because your name is the reason.
+</div>
 
-    <div class="photo-box">
-        <img src="PHOTO4.jpg" alt="Her Photo">
-    </div>
+<div class="photo-box">
+    <img src="PHOTO4.jpg">
+</div>
 
-    <div class="msg">
-        No special day…  
-        no occasion…  
-        just me appreciating you.  
-        Because you deserve it.
-    </div>
+<div class="msg">
+    No special day.  
+    No reason.  
+    Just me appreciating you.
+</div>
 
-    <!-- ENDING -->
-    <div class="section end">
-        I made this for you, Sriyuuu 💗  
-        <br>
-        Just because… you matter.
-    </div>
+<div class="end">
+    I made this for you, Sriyuuu 💗<br>
+    Because you matter.
+</div>
 
-    <!-- MUSIC -->
-    <audio autoplay loop hidden>
-        <source src="YOUR_MUSIC_LINK_HERE">
-    </audio>
+<audio autoplay loop hidden>
+    <source src="YOUR_MUSIC_LINK_HERE">
+</audio>
 
 </body>
 </html>
